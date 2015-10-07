@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.github.willwarren:jscp:c3d34af219">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/willwarren/jscp/c3d34af219/jscp-c3d34af219.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/willwarren/jscp/c3d34af219/jscp-c3d34af219-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/willwarren/jscp/c3d34af219/jscp-c3d34af219-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

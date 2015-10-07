@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/jTalk.iml" filepath="$PROJECT_DIR$/jTalk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jatlk-client-api/jtalk-client-api.iml" filepath="$PROJECT_DIR$/jatlk-client-api/jtalk-client-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jtalk-server-api/jtalk-server-api.iml" filepath="$PROJECT_DIR$/jtalk-server-api/jtalk-server-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jtalk-server-core/jtalk-server-core.iml" filepath="$PROJECT_DIR$/jtalk-server-core/jtalk-server-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jtalk-tests/jtalk-tests.iml" filepath="$PROJECT_DIR$/jtalk-tests/jtalk-tests.iml" />
+    </modules>
+  </component>
+</project>
