@@ -23,7 +23,6 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="jatlk-client-api" />
-        <module name="jtalk-client-api" />
         <module name="jtalk-server-api" />
         <module name="jtalk-server-core" />
         <module name="jtalk-tests" />

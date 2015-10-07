@@ -6,6 +6,7 @@ package com.pddstudio.jtalk.core.configuration;
 public interface IJTalkConfig {
 
     void onLoadConfiguration();
+    void onModuleLoaded();
     String getConfigPath();
 
 }

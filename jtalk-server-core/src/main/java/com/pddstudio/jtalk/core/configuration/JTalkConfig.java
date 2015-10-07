@@ -9,6 +9,8 @@ public abstract class JTalkConfig  implements IJTalkConfig {
 
     public abstract String getConfigPath();
 
+    public abstract void onModuleLoaded();
+
     public JTalkConfig() {}
 
 }
