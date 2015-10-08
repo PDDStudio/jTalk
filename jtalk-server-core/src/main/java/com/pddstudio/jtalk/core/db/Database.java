@@ -34,17 +34,17 @@ public class Database {
 
     Logger logger = new Logger() {
         public void log(String s) {
-            if(printWriter != null) printWriter.println(s);
+            //if(printWriter != null) printWriter.println(s);
         }
     };
 
     private Database() {
 
-        File databaseFile = new File(DATABASE_LOCATION + JHelp.Date.getCurrentDate() + ".log");
-        File databaseLogFile = new File(DATABASE_LOGFILE);
+        File databaseFile = new File(DATABASE_LOCATION);
+        File databaseLogFile = new File(DATABASE_LOGFILE + JHelp.Date.getCurrentDate() + ".log");
 
         if(!databaseLogFile.exists()) {
-            JLog.print("Database ");
+            JLog.print("Created log file for the database.", Log.INFO);
         }
 
         Options options = new Options();
@@ -57,15 +57,15 @@ public class Database {
                 printWriter = new PrintWriter(bufferedWriter);
                 options.logger(logger);
             } catch (IOException e) {
-                JLog.print("Failed to open the database log file!", Log.WARNING);
+                JLog.print("Failed to open the database log file:\n" + e.getMessage(), Log.WARNING);
             }
         }
 
         try {
             db = factory.open(databaseFile, options);
-            JLog.print("Successfully opened the database.", Log.INFO);
+            JLog.print("Successfully opened the database connection.", Log.INFO);
         } catch (IOException e) {
-            JLog.print("An error occurred when trying to open the database:\n" + e.getMessage(), Log.ERROR);
+            JLog.print("An error occurred when trying to open the database connection:\n" + e.getMessage(), Log.ERROR);
         }
 
     }

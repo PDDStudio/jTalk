@@ -7,6 +7,8 @@ public interface IJTalkConfig {
 
     void onLoadConfiguration();
     void onModuleLoaded();
+    void onModuleDestroyed();
+    void onCoreDestroyed();
     String getConfigPath();
 
 }

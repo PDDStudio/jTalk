@@ -2,6 +2,7 @@ package com.pddstudio.jtalk.core.log;
 
 import com.pddstudio.jtalk.core.JTCore;
 import com.pddstudio.jtalk.core.configuration.CoreConfig;
+import com.pddstudio.jtalk.core.tools.JHelp;
 import com.pddstudio.jtalk.core.values.Log;
 
 import java.util.Calendar;
@@ -55,18 +56,7 @@ public final class JLog {
      * @return Current system date as formatted String: [YYYY-MM-DD | hh:mm:ss]
      */
     private static String datePrefix() {
-        Calendar calendar = GregorianCalendar.getInstance();
-        StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("[");
-        stringBuilder.append(calendar.get(Calendar.DATE));
-        stringBuilder.append(" | ");
-        stringBuilder.append(calendar.get(Calendar.HOUR_OF_DAY));
-        stringBuilder.append(":");
-        stringBuilder.append(calendar.get(Calendar.MINUTE));
-        stringBuilder.append(":");
-        stringBuilder.append(calendar.get(Calendar.SECOND));
-        stringBuilder.append("]");
-        return "";
+        return "[" + JHelp.Date.getCurrentDate() + "]";
     }
 
 }

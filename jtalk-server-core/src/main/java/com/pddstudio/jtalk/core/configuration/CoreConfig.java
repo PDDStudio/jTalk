@@ -23,7 +23,7 @@ public final class CoreConfig {
     /**
      * JTalk's core db file name
      */
-    public static final String JTALK_CORE_DB_NAME = "core.db";
+    public static final String JTALK_CORE_DB_NAME = "/core.db";
 
     /**
      * This sub class serves the required values for the JLog class.
@@ -40,6 +40,9 @@ public final class CoreConfig {
          */
         public static final boolean PRINT_LOGS = true;
 
+        /**
+         * Prefix for the database logfiles
+         */
         public static final String DATABASE_LOGFILE = JTALK_LOG_DIR + "/db_logs/db_log_";
 
     }
